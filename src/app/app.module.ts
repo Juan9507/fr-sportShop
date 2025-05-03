@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 
 import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
+import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
     AppRoutingModule,
     MdbCollapseModule,
     MdbDropdownModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdbTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
