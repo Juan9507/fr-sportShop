@@ -1,0 +1,53 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <form class="row g-3 needs-validation" [formGroup]="iniciarSesion" (ngSubmit)="onSubmit()">
+      <div class="col-md-12">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input
+          type="email"
+          class="form-control"
+          id="correo"
+          placeholder="Ej: miemail@gmail.com"
+          formControlName="correo"
+          required
+        />
+      </div>
+      <div class="col-md-12">
+        <label for="contrasenia" class="form-label">Contraseña</label>
+        <input
+          type="password"
+          class="form-control"
+          id="contrasenia"
+          placeholder="Contraseña"
+          formControlName="contrasenia"
+          required
+        />
+      </div>
+      <div
+        class="gap-2 d-md-flex justify-content-md-end d-sm-flex justify-content-sm-end d-xs-flex justify-content-xs-end"
+      >
+        <button class="btn btn-primary me-md-2" type="submit" id="login">
+          Iniciar sesión
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger closeBtn"
+          data-mdb-ripple-init
+          data-mdb-dismiss="modal"
+          (click)="modalRef.close()"
+        >
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

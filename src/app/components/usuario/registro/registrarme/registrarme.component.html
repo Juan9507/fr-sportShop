@@ -1,0 +1,232 @@
+<div class="container-fluid">
+  <app-header></app-header>
+  <!--FORMULARIO DE REGISTRO-->
+  <section class="h-100">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img
+                  src="assets/registroimagen/9394.jpg"
+                  alt="Sample_img"
+                  class="img-fluid"
+                  style="
+                    border-top-left-radius: 0.25rem;
+                    border-bottom-left-radius: 0.25rem;
+                  "
+                />
+              </div>
+              <div class="col-xl-6">
+                <form class="row g-3">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">Registrarme</h3>
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom01" class="form-label"
+                            >Número de documento</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom01"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom02" class="form-label"
+                            >Tipo de documento</label
+                          >
+                          <select
+                            class="form-select"
+                            id="validationCustom02"
+                            required
+                          >
+                            <option selected value="01">
+                              Cedula de ciudadania
+                            </option>
+                            <option value="02">NIT</option>
+                            <option value="03">Tarjeta de indentidad</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom03" class="form-label"
+                            >Barrio</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom03"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom04" class="form-label"
+                            >Ciudad</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom04"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom05" class="form-label"
+                            >Pais</label
+                          >
+                          <select
+                            class="form-select"
+                            id="validationCustom05"
+                            required
+                          >
+                            <option selected value="01">Colombia</option>
+                            <option value="02">Uruguay</option>
+                            <option value="03">Argentina</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom06" class="form-label"
+                            >Nombre</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom06"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom07" class="form-label"
+                            >Apellido</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom07"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom08" class="form-label"
+                            >Edad</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom08"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom09" class="form-label"
+                            >Dirección</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom09"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom10" class="form-label"
+                            >Teléfono</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom10"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom11" class="form-label"
+                            >Correo</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="validationCustom11"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div>
+                          <label for="validationCustom12" class="form-label"
+                            >Contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="validationCustom12"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-3">
+                      <button
+                        type="submit"
+                        id="register"
+                        class="btn btn-success"
+                      >
+                        Registrarme
+                      </button>
+                      <button
+                        type="button"
+                        id="cancelBtn"
+                        class="btn btn-danger ms-2"
+                      >
+                        Cancelar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

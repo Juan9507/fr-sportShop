@@ -3,12 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-producto',
   standalone: false,
-  template: `
-    <p>
-      producto works!
-    </p>
-  `,
-  styles: ``
+  templateUrl: './producto.component.html',
+  styleUrls: ['./producto.component.sass']
 })
 export class ProductoComponent {
 
