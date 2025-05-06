@@ -4,7 +4,7 @@
     <!-- Brand/Logo -->
     <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
       <img
-        src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp"
+        src="assets/productosimagenes/logo.png"
         height="20"
         alt=""
         loading="lazy"
@@ -29,42 +29,15 @@
         <li class="nav-item dropdown me-3 me-lg-1">
           <a
             class="nav-link dropdown-toggle hidden-arrow"
-            href="#"
+            href="/compras"
             id="navbarDropdownMenuLink"
             aria-expanded="false"
             mdbTooltip="Mis compras"
           >
             <i class="fas fa-shopping-basket"></i>
-        </a>
+          </a>
         </li>
-        <li mdbDropdown class="nav-item dropdown me-3 me-lg-1">
-          <button
-            class="nav-link dropdown-toggle hidden-arrow"
-            id="navbarDropdownMenuLink"
-            role="button"
-            mdbDropdownToggle
-            aria-expanded="false"
-            mdbTooltip="Notificaciones"
-          >
-            <i class="fas fa-bell fa-lg"></i>
-            <span class="badge rounded-pill badge-notification bg-danger">12</span>
-          </button>
-          <ul
-            mdbDropdownMenu
-            class="dropdown-menu dropdown-menu-end"
-            aria-labelledby="navbarDropdownMenuLink"
-          >
-            <li>
-              <a class="dropdown-item" href="#">Some news</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another news</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-        </li>
+        <app-notificacion></app-notificacion>
         <li mdbDropdown class="nav-item dropdown me-3 me-lg-1">
           <button
             class="nav-link d-sm-flex align-items-sm-center"

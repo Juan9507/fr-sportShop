@@ -19,6 +19,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 import { RegistrarmeComponent } from './components/usuario/registro/registrarme/registrarme.component';
 import { ComprasComponent } from './components/usuario/compras/compras.component';
+import { NotificacionComponent } from './components/notificacion/notificacion.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ComprasComponent } from './components/usuario/compras/compras.component
     ProductoComponent,
     RegistrarmeComponent,
     ComprasComponent,
+    NotificacionComponent,
   ],
   imports: [
     BrowserModule,
