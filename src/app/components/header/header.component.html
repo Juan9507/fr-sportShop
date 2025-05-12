@@ -54,18 +54,33 @@
               alt=""
               loading="lazy"
             />
-            <strong class="d-none d-sm-block ms-1">Ingresar</strong>
+            <strong class="d-none d-sm-block ms-1" *ngIf="usuarioLogueado">
+              {{ usuarioRepuesta?.datos?.nombre }}
+            </strong>
+            <strong class="d-none d-sm-block ms-1" *ngIf="!usuarioLogueado">
+              Menú usuario
+            </strong>
           </button>
           <ul
             mdbDropdownMenu
             class="dropdown-menu dropdown-menu-end"
             aria-labelledby="navbarDropdownMenuLink"
           >
-            <li>
+            <li *ngIf="!usuarioLogueado">
               <button class="dropdown-item" (click)="openModal()">Iniciar sesión</button>
             </li>
-            <li>
+            <li *ngIf="!usuarioLogueado">
               <a class="dropdown-item" href="/registro">Registrarme</a>
+            </li>
+            <li *ngIf="usuarioLogueado">
+              <button
+                class="dropdown-item"
+                (click)="cerrarSesion()"
+                >Cerrar sesión
+              </button>
+            </li>
+            <li *ngIf="usuarioLogueado">
+              <a class="dropdown-item" href="#">Mi perfil</a>
             </li>
           </ul>
         </li>
